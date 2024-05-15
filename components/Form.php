@@ -1,8 +1,7 @@
 <?php include('conectdb.php'); ?>
 <?php include('EnviarDados.php'); ?>
 
-<div class="row">
-    <div class="col-md-6">
+<div class="container">
       <form method="post" class="row g-3 fomulario">
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
@@ -25,8 +24,8 @@
           <input name="cidade" type="text" class="form-control" id="cidade">
         </div>
         <div class="col-md-6">
-          <label for="inputState" class="form-label">Estado</label>
-          <select name="uf" id="inputState" class="form-select">
+          <label for="uf" class="form-label ">Estado</label>
+          <select name="uf" id="uf" class="form-select" required>
             <option>...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -59,17 +58,17 @@
         </div>
         <div class="col-md-3">
           <label for="cep" class="form-label">Cep</label>
-          <input name="cep" type="text" class="form-control" id="cep">
+          <input name="cep" type="text" class="form-control" id="cep" required>
         </div>
-        <div class="col-md-6 upload">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Upload de Imagens</h5>
+        <div class="col-md-6 upload w-80 p-3">
+          <div class="card w-100 p-3">
+            <div class="card-body w-100 p-3" >
+              <h5 class="card-title ">Upload de Imagens</h5>
               <label for="imagem">Selecione uma imagem:</label>
-              <input name="file" type="file" class="form-control-file" id="imagem" >
+              <input name="file" type="file" class="form-control-file" id="imagem" accept="image/*" multiple required >
             </div>
-            <button type="submit" name='submit' class="btn btn-primary">Enviar</button>
           </div>
         </div>
+        <button type="submit" name='submit' class="btn btn-primary overflow-hidden">Enviar</button>
       </form>
-    </div>
+</div>
