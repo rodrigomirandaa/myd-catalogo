@@ -1,33 +1,32 @@
+<?php include('conectdb.php'); ?>
+<?php include('EnviarDados.php'); ?>
+
 <div class="row">
     <div class="col-md-6">
-      <form class="row g-3 fomulario">
+      <form method="post" class="row g-3 fomulario">
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome">
+          <input type="text" name="nome" class="form-control" id="nome">
         </div>
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" name="email" class="form-control" id="email">
         </div>
         <div class="col-8">
           <label for="endereco" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="endereco" placeholder="Rua benfica,1022">
-        </div>
-        <div class="col-md-4">
-          <label for="numero" class="form-label">Numero</label>
-          <input type="text" class="form-control" id="numero">
+          <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua benfica,1022" >
         </div>
         <div class="col-6">
           <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+          <input name="telefone" type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
         </div>
         <div class="col-md-6">
           <label for="cidade" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="cidade">
+          <input name="cidade" type="text" class="form-control" id="cidade">
         </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
+          <select name="uf" id="inputState" class="form-select">
             <option>...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -60,7 +59,17 @@
         </div>
         <div class="col-md-3">
           <label for="cep" class="form-label">Cep</label>
-          <input type="text" class="form-control" id="cep">
+          <input name="cep" type="text" class="form-control" id="cep">
+        </div>
+        <div class="col-md-6 upload">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upload de Imagens</h5>
+              <label for="imagem">Selecione uma imagem:</label>
+              <input name="file" type="file" class="form-control-file" id="imagem" >
+            </div>
+            <button type="submit" name='submit' class="btn btn-primary">Enviar</button>
+          </div>
         </div>
       </form>
     </div>
