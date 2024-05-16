@@ -1,10 +1,10 @@
 <?php include('conectdb.php'); ?>
 <?php include('EnviarDados.php'); ?>
-
+<h1 class="mb-5">Cadatro de Clínicas</h1>
 <div class="container">
       <form method="post" class="row g-3 fomulario">
         <div class="col-md-6">
-          <label for="nome" class="form-label">Nome</label>
+          <label for="nome" class="form-label">Nome da Clínica</label>
           <input type="text" name="nome" class="form-control" id="nome">
         </div>
         <div class="col-md-6">
@@ -57,8 +57,20 @@
           </select>
         </div>
         <div class="col-md-3">
-          <label for="cep" class="form-label">Cep</label>
+          <label for="cep" class="form-label">CEP</label>
           <input name="cep" type="text" class="form-control" id="cep" required>
+        </div>
+        <div class="col-md-3">
+          <label for="cnpj" class="form-label">CNPJ</label>
+          <input name="cnpj" type="text" class="form-control" id="cnpj" placeholder="12345678901" required>
+        </div>
+        <div class="col-8">
+          <label for="especialidades" class="form-label">Especialidades</label>
+          <textarea name="especialidades" class="form-control fs-7" id="especialidades" rows="1" placeholder="Psicologia, Ortopedia,..."></textarea>
+        </div>
+        <div class="col-8">
+          <label for="descricao" class="form-label">Descrição da Clínica</label>
+          <textarea name="descricao" class="form-control fs-7" id="descricao" rows="5" placeholder=""></textarea>
         </div>
         <div class="col-md-6 upload w-80 p-3">
           <div class="card w-100 p-3">
@@ -69,6 +81,7 @@
             </div>
           </div>
         </div>
+        
         <button type="submit" name='submit' class="btn btn-primary overflow-hidden">Enviar</button>
       </form>
 </div>

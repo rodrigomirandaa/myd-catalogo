@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         if ($contador <= 4) {
             $extension = pathinfo($name, PATHINFO_EXTENSION);
             $newName = $token . "_" . $contador . "." . $extension;
-            move_uploaded_file($tmp_name[$index], 'static/'. $token . $newName);
+            move_uploaded_file($tmp_name[$index], 'static/'.$newName);
             $contador = $contador + 1;
         }
     }
@@ -35,7 +35,10 @@ if (isset($_POST['submit'])) {
         'telefone' => $_POST['telefone'],
         'uf' => $_POST['uf'],
         'cidade' => $_POST['cidade'],
-        'cep' => $_POST['cep']
+        'cep' => $_POST['cep'],
+        'cnpj' => $_POST['cnpj'],
+        'especialidades'=> $_POST['especialidades'],
+        'descricao' => $_POST['descricao']
     ];
 
     //caminho para armazernar, deletar ou atualizar o banco
