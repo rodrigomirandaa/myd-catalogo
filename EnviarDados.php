@@ -12,6 +12,12 @@ if (isset($_POST['submit'])) {
     $names = $files['name'];
     $tmp_name = $files['tmp_name'];
 
+    $caminhoPasta = 'static/'.$token;
+
+    if (!empty($_FILES['file']['name'][0])) {
+        mkdir($caminhoPasta, 0777, true);
+    }
+
     //limitador de quantidade de imagens
     $contador = 1;
 
@@ -21,7 +27,7 @@ if (isset($_POST['submit'])) {
         if ($contador <= 4) {
             $extension = pathinfo($name, PATHINFO_EXTENSION);
             $newName = $token . "_" . $contador . "." . $extension;
-            move_uploaded_file($tmp_name[$index], 'static/'.$newName);
+            move_uploaded_file($tmp_name[$index], $caminhoPasta . '/' . $newName);
             $contador = $contador + 1;
         }
     }

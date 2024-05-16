@@ -2,7 +2,7 @@
 <?php include('EnviarDados.php'); ?>
 <h1 class="mb-5">Cadatro de Clínicas</h1>
 <div class="container">
-      <form method="post" class="row g-3 fomulario">
+      <form method="post" enctype="multipart/form-data" class="row g-3 fomulario">
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome da Clínica</label>
           <input type="text" name="nome" class="form-control" id="nome">
@@ -77,7 +77,7 @@
             <div class="card-body w-100 p-3" >
               <h5 class="card-title ">Upload de Imagens</h5>
               <label for="imagem">Selecione uma imagem:</label>
-              <input name="file" type="file" class="form-control-file" id="imagem" accept="image/*" multiple required >
+              <input name="file[]" type="file" class="form-control-file" id="imagem" accept="image/*" multiple required >
             </div>
           </div>
         </div>
