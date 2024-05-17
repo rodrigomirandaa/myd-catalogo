@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     //repetir ate que todas as imagens sejam adicionadas
     foreach ($names as $index => $name) {
         //delimitar a quantidade de imagens
-        if ($contador <= 4) {
+        if ($contador <= 5) {
             $extension = pathinfo($name, PATHINFO_EXTENSION);
             $newName = $token . "_" . $contador . "." . $extension;
             move_uploaded_file($tmp_name[$index], $caminhoPasta . '/' . $newName);
