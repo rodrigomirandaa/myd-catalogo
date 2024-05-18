@@ -1,6 +1,6 @@
 <?php include('conectdb.php'); ?>
 <?php include('EnviarDados.php'); ?>
-<h1 class="mb-5">Cadatro de Clínicas</h1>
+<h1 class="mb-5">Cadastro de Clínicas</h1>
 <div class="container">
       <form method="post" enctype="multipart/form-data" class="row g-3 fomulario">
         <div class="col-md-6">

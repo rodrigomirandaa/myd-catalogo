@@ -24,6 +24,9 @@
   <div class="container">
     <div class="text-center">
       <div>
+        <br>
+        <br>
+        <br>
         <h2 class="h1 text-dark mb-3">Clínicas destaque</h2>
         <p class="text-dark fs-4"> Conheça as clínicas mais bem avaliadas pelos usuários Make Your Day!</p>
       </div>
