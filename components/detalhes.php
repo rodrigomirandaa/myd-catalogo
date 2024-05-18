@@ -1,7 +1,7 @@
 <?php
-    function recebeId($id){
-        $id;
+    function recebeInfo($info){
+        $info;
     }
 ?>
 
-<h1></h1>
+<h5>Nome: <?php echo $info['nome']?></h5>

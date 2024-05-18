@@ -1,9 +1,6 @@
 <link rel="stylesheet" href="./styles/style.css">
 <?php include('conectdb.php');?>
 <?php
-  function recebeClinica($clinica){
-    $clinica;
-  }
 ?>
 
 <section class="py-4">

@@ -7,8 +7,7 @@
 <?php include('components/banner.php'); ?>
 
 <?php foreach ($clinicas -> getValue() as $clinica):?>
-    <?php include('components/cards.php');
-        recebeClinica($clinica)?>
+    <?php include('components/cards.php')?>
 <?php endforeach?>
 
 <?php include ('components/footer.php'); ?>
