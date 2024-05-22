@@ -1,25 +1,16 @@
-<link rel="stylesheet" href="./styles/style.css">
-<?php include('conectdb.php');?>
 <?php
+$imagem_files = glob("static/{$clinica['id']}/{$clinica['id']}_*.{jpg,jpeg,png}", GLOB_BRACE);
+$imagem = $imagem_files ? $imagem_files[0] : 'static/default.png';
 ?>
 
-<section class="py-4">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="static/banner.svg" class="card-img-top" alt="Imagem da Clínica 1">
-          <div class="card-body">
-            <h5 class="card-title">Nome da Clínica:<?php echo $clinica['nome'];?> </h5>
-            <p class="card-text">Telefone: <?php echo $clinica['telefone'];?></p>
-            <p class="card-text">Endereço: <?php echo $clinica['endereco'];?> </p>
-            <p class="card-text">Site: <a href="#">www.site-da-clinica1.com</a></p>
-            <?php $link = 'preview.php?id='.$clinica['chave'];?>
-            <a href="<?php echo $link?>" class="botao">Ver Detalhes</a>
-          </div>
-        </div>
-      </div>
+<div class="card h-100">
+    <img src='<?php echo $imagem; ?>' class='card-img-top' alt='Imagem da Clínica'>
+    <div class="card-body">
+        <h5 class="card-title">Nome da Clínica: <?php echo $clinica['nome']; ?> </h5>
+        <p class="card-text">Telefone: <?php echo $clinica['telefone']; ?></p>
+        <p class="card-text">Endereço: <?php echo $clinica['endereco']; ?> </p>
+        <p class="card-text">Site: <a href="#">www.site-da-clinica1.com</a></p>
+        <?php $link = 'preview.php?chave=' . $clinica['chave']; ?>
+        <a href="<?php echo $link; ?>" class="botao">Ver Detalhes</a>
     </div>
-  </div>
-</section>
+</div>
