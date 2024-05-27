@@ -1,33 +1,31 @@
-<div class="row">
-    <div class="col-md-6">
-      <form class="row g-3 fomulario">
+<?php include('conectdb.php'); ?>
+<?php include('EnviarDados.php'); ?>
+<h1 class="mb-5">Cadastro de Clínicas</h1>
+<div class="container">
+      <form method="post" enctype="multipart/form-data" class="row g-3 fomulario">
         <div class="col-md-6">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome">
+          <label for="nome" class="form-label">Nome da Clínica</label>
+          <input type="text" name="nome" class="form-control" id="nome">
         </div>
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" name="email" class="form-control" id="email">
         </div>
         <div class="col-8">
           <label for="endereco" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="endereco" placeholder="Rua benfica,1022">
-        </div>
-        <div class="col-md-4">
-          <label for="numero" class="form-label">Numero</label>
-          <input type="text" class="form-control" id="numero">
+          <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua benfica,1022" >
         </div>
         <div class="col-6">
           <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+          <input name="telefone" type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
         </div>
         <div class="col-md-6">
           <label for="cidade" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="cidade">
+          <input name="cidade" type="text" class="form-control" id="cidade">
         </div>
         <div class="col-md-6">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
+          <label for="uf" class="form-label ">Estado</label>
+          <select name="uf" id="uf" class="form-select" required>
             <option>...</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -59,8 +57,30 @@
           </select>
         </div>
         <div class="col-md-3">
-          <label for="cep" class="form-label">Cep</label>
-          <input type="text" class="form-control" id="cep">
+          <label for="cep" class="form-label">CEP</label>
+          <input name="cep" type="text" class="form-control" id="cep" required>
         </div>
+        <div class="col-md-3">
+          <label for="cnpj" class="form-label">CNPJ</label>
+          <input name="cnpj" type="text" class="form-control" id="cnpj" placeholder="12345678901" required>
+        </div>
+        <div class="col-8">
+          <label for="especialidades" class="form-label">Especialidades</label>
+          <textarea name="especialidades" class="form-control fs-7" id="especialidades" rows="1" placeholder="Psicologia, Ortopedia,..."></textarea>
+        </div>
+        <div class="col-8">
+          <label for="descricao" class="form-label">Descrição da Clínica</label>
+          <textarea name="descricao" class="form-control fs-7" id="descricao" rows="5" placeholder=""></textarea>
+        </div>
+        <div class="col-md-6 upload w-80 p-3">
+          <div class="card w-100 p-3">
+            <div class="card-body w-100 p-3" >
+              <h5 class="card-title ">Upload de Imagens</h5>
+              <label for="imagem">Selecione uma imagem:</label>
+              <input name="file[]" type="file" class="form-control-file" id="imagem" accept="image/*" multiple required >
+            </div>
+          </div>
+        </div>
+        <button type="submit" name='submit' class="btn btn-primary overflow-hidden">Enviar</button>
       </form>
-    </div>
+</div>
