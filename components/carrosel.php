@@ -3,10 +3,10 @@
 
 
 <?php
-$caminhoimg1 = './static/' . $id . '/' . $id . '0.png';
-$caminhoimg2 = "./static/" . $id . "/" . $id . "1.png";
-$caminhoimg3 = "./static/" . $id . "/" . $id . "2.png";
-$caminhoimg4 = "./static/" . $id . "/" . $id . "3.png";
+$caminhoimg1 = './static/' . $id . '/' . $id . '_0.png';
+$caminhoimg2 = "./static/" . $id . "/" . $id . "_1.png";
+$caminhoimg3 = "./static/" . $id . "/" . $id . "_2.png";
+$caminhoimg4 = "./static/" . $id . "/" . $id . "_3.png";
 
 ?>
 
