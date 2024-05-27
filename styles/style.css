@@ -2,3 +2,37 @@
     margin-top: 2rem;
     margin-bottom: 50px;
 }
+.botao{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #F2B66D;
+    justify-content: center;
+    display: flex;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.details{
+  margin: 3vh 15vh;
+  text-align: left;
+  background-color:#FBFBFB;
+  padding: 20px 80px ;
+  border-radius: 20px;
+  width: 60%;
+  border: 2px solid #F2B66D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.1, 0.1)}
+
+.caracteristica{
+    color: #F2B66D;
+}
