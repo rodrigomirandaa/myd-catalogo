@@ -36,3 +36,89 @@
 .caracteristica{
     color: #F2B66D;
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #sobre h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #sobre p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  #team {
+    background: #fff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 2rem); 
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .card a {
+    color: #0077b5; 
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 992px) {
+    .card {
+      width: calc(50% - 2rem); 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: calc(100% - 2rem); 
+    }
+  
+    #sobre p {
+      font-size: 1.4rem;
+      margin: 0 1.5rem 2rem 1.5rem;
+    }
+  }
+  
