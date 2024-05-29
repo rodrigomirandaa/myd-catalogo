@@ -1,49 +1,44 @@
 .banner{
-    margin-top: 2rem;
-    margin-bottom: 50px;
+  margin-top: 2rem;
+  margin-bottom: 50px;
 }
 .botao{
-    border: none;
-    border-radius: 20px;
-    color: white;
-    padding: 15px 42px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: #F2B66D;
-    justify-content: center;
-    display: flex;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #F2B66D;
+  justify-content: center;
+  display: flex;
 }
 
 .center{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 
 .details{
-  margin: 3vh 15vh;
-  text-align: left;
-  background-color:#FBFBFB;
-  padding: 20px 80px ;
-  border-radius: 20px;
-  width: 60%;
-  border: 2px solid #F2B66D;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.1, 0.1)}
+margin: 3vh 15vh;
+text-align: left;
+background-color:#FBFBFB;
+padding: 20px 80px ;
+border-radius: 20px;
+width: 60%;
+border: 2px solid #F2B66D;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.1, 0.1)}
 
 .caracteristica{
-    color: #F2B66D;
+  color: #F2B66D;
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   #sobre h1 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -67,7 +62,7 @@ body {
     gap: 2rem;
   }
   
-  .card {
+  .cardSobre {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -78,41 +73,41 @@ body {
     box-sizing: border-box;
   }
   
-  .card img {
+  .cardSobre img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     margin-bottom: 1rem;
   }
   
-  .card h3 {
+  .cardSobre h3 {
     font-size: 1.2em;
     margin-bottom: 0.5rem;
   }
   
-  .card p {
+  .cardSobre p {
     font-size: 0.9em;
     color: #666;
   }
   
-  .card a {
+  .cardSobre a {
     color: #0077b5; 
     text-decoration: none;
     margin: 0 0.5rem;
   }
   
-  .card a:hover {
+  .cardSobre a:hover {
     text-decoration: underline;
   }
 
   @media (max-width: 992px) {
-    .card {
+    .cardSobre {
       width: calc(50% - 2rem); 
     }
   }
   
   @media (max-width: 600px) {
-    .card {
+    .cardSobre {
       width: calc(100% - 2rem); 
     }
   
